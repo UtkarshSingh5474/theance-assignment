@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5F5;
+   /* Set your desired background color */
+  padding: 20px 20px; /* Adjust padding as needed */
+  border-radius: 20px; /* Adjust border-radius for rounded corners */
+  margin: 20px; /* Adjust margin as needed */
+}
+
+
+  .copyright-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the container takes full height */
+    font-family: 'Switzer-Light'; 
+    font-size: 15px;
+  }
+  
+  .logo-img {
+    height: 20px;
+    width: auto;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+
+  .btn-text{
+    text-decoration: underline dotted;
+    font-family: 'Switzer-Light'; 
+    font-size: 15px;
+  }
+  
+  /* RoundedButton.css */
+  
+  .rounded-button {
+    border: none;
+    border-radius: 20px; /* Adjust border-radius for rounded corners */
+    background-color: #007bff; /* Set your desired button background color */
+    color: white; /* Set your desired button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin-left: 10px; /* Adjust margin between buttons */
+  }
+  
+  .rounded-button:hover {
+    background-color: #0056b3; /* Set your desired button hover background color */
+  }
+  

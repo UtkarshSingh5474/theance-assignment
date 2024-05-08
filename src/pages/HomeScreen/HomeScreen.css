@@ -1,0 +1,97 @@
+/* HomeScreen.css */
+
+.content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.vertical-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+}
+
+.subtext {
+  color: #2da950;
+  font-family: 'CoveredByYourGrace-Regular';
+  font-size: 30px;
+  margin-bottom: -50px;
+}
+
+.heading {
+  font-size: 45px;
+  font-family: 'Switzer-Medium';
+  text-align: center;
+}
+
+.two-columns {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to the next line */
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.success-img {
+  max-width: 100%; /* Ensure image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  position: relative; /* Position the button relative to this container */
+}
+
+.carousel-text {
+  font-size: 20px;
+  font-family: 'Switzer-Medium';
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center; /* Center dots horizontally */
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px; /* Add margin between dots */
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #2da950;
+}
+
+.carousel-button {
+  margin-top: auto; /* Push the button to the bottom */
+  text-align: center; /* Center the button horizontally */
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .two-columns {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .left-column {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+
+  .right-column {
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+}

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom'; // Import Routes and Route from React Router
+import HomeScreen from './pages/HomeScreen/HomeScreen' // Import the HomeScreen component
+import RegistrationScreen from './pages/RegistrationSceen/RegistrationScreen' // Import the RegistrationScreen component
+import FormSuccessScreen from './pages/FormSuccessScreen/FormSuccessScreen' // Import the FormSuccessScreen component
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        {/* Define routes */}
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/registration" element={<RegistrationScreen />} />
+        <Route path="/form-success" element={<FormSuccessScreen />} />
+      </Routes>
     </div>
   );
 }

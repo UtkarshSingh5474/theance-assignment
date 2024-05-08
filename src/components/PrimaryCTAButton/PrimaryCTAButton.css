@@ -1,0 +1,13 @@
+.primary-button {
+    background-color: white;
+    border: 1px solid #dddddd;
+    color: black;
+    padding: 16px 30px;
+    border-radius: 40px; 
+    cursor: pointer;
+  }
+  
+  .primary-button:hover {
+    background-color: #dddddd;
+  }
+  

@@ -1,0 +1,13 @@
+.secondary-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 40px; 
+    cursor: pointer;
+  }
+  
+  .secondary-button:hover {
+    background-color: #4E4E4E;
+  }
+  
