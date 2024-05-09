@@ -1,3 +1,5 @@
+### Apologies for the incorrect spelling of the company name
+
 ## Installation
 
 Before you begin, ensure you have Node.js and npm installed on your machine. You can download and install them from [here](https://nodejs.org/).
