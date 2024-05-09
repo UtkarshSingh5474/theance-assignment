@@ -12,11 +12,10 @@ function FAQAccordionCard() {
   return (
     <div className="accordion">
       <div className="faq-vertical-text">
-        {/* Text for the first vertical section */}
         <p className="faq-subtext">What’s on your mind</p>
         <p className="faq-heading">Ask Questions</p>
         <div className="image-box">
-          <img src={UnionSVG} alt="" />
+          <img src={UnionSVG} alt="union" />
         </div>
       </div>
 

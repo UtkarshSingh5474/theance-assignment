@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useHistory for navigation
+import { useNavigate } from "react-router-dom"; 
 import logoSVG from "../../assets/Logo.svg";
 import ErrorSVG from "../../assets/Error.svg";
 import CheckmarkSVG from "../../assets/Checkmark.svg";
@@ -10,20 +10,20 @@ const FormSuccessScreen = () => {
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [submitButtonColor, setSubmitButtonColor] = useState("");
-  const [countdown, setCountdown] = useState(5); // Countdown state
+  const [countdown, setCountdown] = useState(5); 
 
-  const navigate = useNavigate(); // Access history object for navigation
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (countdown > 0) {
-        setCountdown(countdown - 1); // Decrease countdown every second
+        setCountdown(countdown - 1); 
       } else {
-        navigate("/"); // Redirect to homepage when countdown reaches 0
+        navigate("/"); 
       }
-    }, 1000); // Timer runs every second
+    }, 1000); 
 
-    return () => clearTimeout(timer); // Cleanup timer on component unmount
+    return () => clearTimeout(timer); 
   }, [countdown, navigate]);
 
   const handleNameChange = (e) => {
@@ -50,14 +50,14 @@ const FormSuccessScreen = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault(); 
     if (!validateEmail(email)) {
       setEmailError("Please enter a valid email address");
     } else {
-      // Handle form submission
+
       console.log("Name:", name);
       console.log("Email:", email);
-      // Clear any previous errors
+
       setEmailError("");
     }
   };

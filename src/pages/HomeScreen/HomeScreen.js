@@ -38,7 +38,7 @@ const HomeScreen = () => {
       <div className="content">
         <div className="section">
           <div className="vertical-text">
-            {/* Text for the first vertical section */}
+            {}
             <p className="subtext">Success Stories</p>
             <p className="heading">
               Every success journey
@@ -48,10 +48,10 @@ const HomeScreen = () => {
           </div>
           <div className="two-columns">
             <div className="left-column">
-              {/* Image */}
+              {}
               <img
                 src={SuccessStories}
-                className="success-img"
+                className="carousel-image"
                 alt="Left Image"
               />
             </div>
@@ -60,10 +60,7 @@ const HomeScreen = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              {/* Carousel with text and button */}
-              {/* Carousel content */}
               <p className="carousel-text">{carouselContent[currentSlide]}</p>
-              {/* Navigation dots */}
               <div className="carousel-dots">
                 {carouselContent.map((_, index) => (
                   <div

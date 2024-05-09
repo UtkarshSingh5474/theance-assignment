@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import logoSVG from "../../assets/Logo.svg";
 import ErrorSVG from "../../assets/Error.svg";
 import "./RegistrationScreen.css";
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate } from 'react-router-dom';
 
 const RegistrationScreen = () => {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");

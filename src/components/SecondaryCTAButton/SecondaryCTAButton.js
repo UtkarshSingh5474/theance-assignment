@@ -1,5 +1,5 @@
 import React from 'react';
-import './SecondaryCTAButton.css'; // Import CSS specific to SecondaryCTAButton
+import './SecondaryCTAButton.css'; 
 
 const SecondaryCTAButton = ({ onClick, children }) => {
   return (

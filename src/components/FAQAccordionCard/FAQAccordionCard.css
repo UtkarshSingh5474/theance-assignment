@@ -120,12 +120,7 @@
     flex-direction: column;
   }
   .accordion .image-box{
-    height: auto;
-    width: auto;
-    background: black;
-    width: 100%;
-    border-radius: 25px;
-    padding: 30px;
+    display: none;
   }
   .accordion .accordion-text{
     width: 100%;
