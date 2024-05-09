@@ -48,11 +48,10 @@ const HomeScreen = () => {
           </div>
           <div className="two-columns">
             <div className="left-column">
-              {}
               <img
                 src={SuccessStories}
                 className="carousel-image"
-                alt="Left Image"
+                alt="Carousel-Pic"
               />
             </div>
             <div

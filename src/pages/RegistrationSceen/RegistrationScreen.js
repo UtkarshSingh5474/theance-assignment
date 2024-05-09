@@ -52,7 +52,7 @@ const RegistrationScreen = () => {
     <div>
       <div className="top-bar">
         <div className="logo-container">
-          <img src={logoSVG} alt="Logo" className="logo-img" />
+          <img src={logoSVG} alt="logo-pic" className="logo-img" />
         </div>
         <div className="close-btn">
           <p>&#10005;</p>
@@ -87,7 +87,7 @@ const RegistrationScreen = () => {
               />
               {emailError && (
                 <div className="error">
-                  <img src={ErrorSVG}></img>
+                  <img src={ErrorSVG} alt="error"></img>
                   <p className="error-text">{emailError}</p>
                 </div>
               )}

@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; 
 import logoSVG from "../../assets/Logo.svg";
-import ErrorSVG from "../../assets/Error.svg";
 import CheckmarkSVG from "../../assets/Checkmark.svg";
 import "./FormSuccessScreen.css";
 
 const FormSuccessScreen = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [submitButtonColor, setSubmitButtonColor] = useState("");
   const [countdown, setCountdown] = useState(5); 
-
   const navigate = useNavigate(); 
 
   useEffect(() => {
@@ -25,42 +19,6 @@ const FormSuccessScreen = () => {
 
     return () => clearTimeout(timer); 
   }, [countdown, navigate]);
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-    updateSubmitButtonColor(e.target.value, email);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    updateSubmitButtonColor(name, e.target.value);
-  };
-
-  const updateSubmitButtonColor = (name, email) => {
-    if (name.trim() !== "" && email.trim() !== "") {
-      setSubmitButtonColor("black");
-    } else {
-      setSubmitButtonColor("");
-    }
-  };
-
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); 
-    if (!validateEmail(email)) {
-      setEmailError("Please enter a valid email address");
-    } else {
-
-      console.log("Name:", name);
-      console.log("Email:", email);
-
-      setEmailError("");
-    }
-  };
 
   return (
     <div>
